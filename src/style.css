@@ -1,0 +1,131 @@
+/* global stuff */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #e7e5e4;
+}
+
+#root {
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    padding-left: 50px;
+    padding-right: 50px;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-shrink: 1;
+    align-items: center;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    flex-shrink: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1rem;
+    border-width: 8px;
+    border-radius: 15px;
+}
+
+nav > h1 {
+    margin-right: auto;
+}
+
+nav > h1:hover {
+    cursor: pointer;
+}
+
+.container {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    background: #fef3c7;
+    border-radius: 35px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.center, .results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.results {
+    gap: 50px;
+}
+
+/* menu buttons */
+
+.return {
+    color: #dc2626;
+    border-color: #dc2626;
+    background: #fecaca;
+}
+
+.start, .submit {
+    color: #16a34a;
+    border-color: #16a34a;
+    background: #bef264;
+}
+
+/* option buttons */
+.option, .correct, .incorrect, .selected {
+    flex-grow: 1;
+}
+
+.option {
+    color: #475569;
+    border-color: #475569;
+    background-color: #f1f5f9;
+}
+
+.selected {
+    color: #2563eb;
+    border-color: #2563eb;
+    /* background: #67e8f9; */
+    background: #bae6fd;
+}
+
+.correct {
+    border-color: #16a34a;
+}
+
+.correct.selected {
+    color: #16a34a;
+    /* color: #166534; */
+    /* background: #bef264; */
+    background: #d9f99d;
+}
+
+.incorrect.selected {
+    /* color: #dc2626; */
+    color: #991b1b;
+    border-color: #dc2626;
+    background: #fecaca;
+}
